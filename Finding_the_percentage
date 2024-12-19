@@ -6,8 +6,8 @@ if __name__ == '__main__':
         scores = list(map(float, line))
         student_marks[name] = scores
     query_name = input()
-    not_toplam = 0
+    score_sum = 0
     for i in student_marks[query_name]:
-        not_toplam += i
-    ortalama = f"{(not_toplam/len(student_marks[query_name])):.2f}"
-    print(ortalama)
+        score_sum += i
+    avarage = f"{(score_sum/len(student_marks[query_name])):.2f}"
+    print(avarage)
